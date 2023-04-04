@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <form class="sell_form">
+      <label for="title">Sell your item</label>
+      <label for="name">Name</label>
+      <input class="u-full-width" type="text" id="name" name="name" />
+      <label for="description">Description</label>
+      <textarea
+        class="u-full-width"
+        type="text"
+        id="description"
+        name="description"
+      ></textarea>
+      <label for="price">price</label>
+      <input class="u-full-width" type="number" id="price" name="price" />
+      <label for="quantity">quantity</label>
+      <input class="u-full-width" type="number" id="quantity" name="quantity" />
+      <label for="seller">seller</label>
+      <input class="u-full-width" type="text" id="seller" name="seller" />
+      <button class="button-primary">Sell!</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
 </html>
