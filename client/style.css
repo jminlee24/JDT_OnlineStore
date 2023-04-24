@@ -1,3 +1,6 @@
 .sell_form {
   width: 255px;
 }
+.product_container > div {
+  border-color: black;
+}

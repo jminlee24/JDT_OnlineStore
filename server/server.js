@@ -37,8 +37,10 @@ app.get("/test", (request, response) => {
 app.get("/getProducts", async (req, res) => {
   const productsCol = db.collection("Products");
   const snapshot = await productsCol.get();
-  const docData = snapshot.docs.map((doc) => doc.data());
-  console.log(docData);
+  const docData = snapshot.docs.map((doc) => {
+    return { id: doc.id, data: doc.data() };
+  });
+  res.json({ products: docData });
 });
 
 app.post("/addProduct", async (req, res) => {
